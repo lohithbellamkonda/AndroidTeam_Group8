@@ -11,4 +11,7 @@ public class PauseEndScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pause_end_screen);
     }
+
+    //Pause Screen to go back to main menu will be here
+    //End Game Screen when player beats the game will be here
 }

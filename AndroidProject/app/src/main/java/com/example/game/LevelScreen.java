@@ -11,4 +11,6 @@ public class LevelScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_screen);
     }
+
+    //Where the level will be shown
 }

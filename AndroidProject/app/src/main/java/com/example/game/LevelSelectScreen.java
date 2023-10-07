@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainScreen extends AppCompatActivity {
+public class LevelSelectScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        setContentView(R.layout.activity_level_select_screen);
     }
 
-    //Level Select button and New Game button will be here
+    //Will add a number of buttons to the layout, in which number will be determined later
 }
