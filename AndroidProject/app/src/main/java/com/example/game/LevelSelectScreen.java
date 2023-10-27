@@ -2,6 +2,7 @@ package com.example.game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,55 +40,64 @@ public class LevelSelectScreen extends AppCompatActivity {
         levelOneBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelTwoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelThreeBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelFourBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelFiveBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelSixBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelSevenBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelEightBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
         levelNineBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                v.getContext().startActivity(intent);
             }
         });
     }
