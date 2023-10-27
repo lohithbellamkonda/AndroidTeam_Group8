@@ -24,4 +24,5 @@
     <string name="congratulations">Congratulations</string>
     <string name="time">Time:</string>
     <string name="level">Level:</string>
+    <string name="pause">Pause</string>
 </resources>
