@@ -13,6 +13,9 @@ public class NextLevelScreen extends AppCompatActivity {
     Button nextLevelBTN;
     TextView levelCompleteTV;
 
+    int count = 0;
+    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +27,12 @@ public class NextLevelScreen extends AppCompatActivity {
         nextLevelBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                if(count == 0){
+                    intent = new Intent(v.getContext(), LevelScreen.class);
+                }
+                else{
+                    intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                }
                 v.getContext().startActivity(intent);
             }
         });

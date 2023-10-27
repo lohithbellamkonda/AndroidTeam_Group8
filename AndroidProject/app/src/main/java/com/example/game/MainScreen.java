@@ -12,6 +12,10 @@ public class MainScreen extends AppCompatActivity {
     Button newGameBTN;
     Button levelSelectBTN;
 
+    int count1 = 0;
+    int count2 = 0;
+    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +27,26 @@ public class MainScreen extends AppCompatActivity {
         newGameBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                if(count1 == 0){
+                    intent = new Intent(v.getContext(), LevelScreen.class);
+                    count1++;
+                }
+                else{
+                    intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                }
                 v.getContext().startActivity(intent);
             }
         });
         levelSelectBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelSelectScreen.class);
+                if(count2 == 0){
+                    intent = new Intent(v.getContext(), LevelSelectScreen.class);
+                    count2++;
+                }
+                else{
+                    intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                }
                 v.getContext().startActivity(intent);
             }
         });

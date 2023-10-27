@@ -29,6 +29,7 @@ public class PauseScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), MainScreen.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 v.getContext().startActivity(intent);
             }
         });
@@ -36,6 +37,7 @@ public class PauseScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), LevelScreen.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 v.getContext().startActivity(intent);
             }
         });
