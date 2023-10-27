@@ -15,7 +15,7 @@
         android:layout_marginTop="125dp"
         android:layout_marginEnd="170dp"
         android:text="@string/new_game"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="170dp"
         android:text="@string/level_select"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
