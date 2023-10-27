@@ -3,13 +3,29 @@ package com.example.game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class NextLevelScreen extends AppCompatActivity {
+
+    Button nextLevelBTN;
+    TextView levelCompleteTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next_level_screen);
+        if(savedInstanceState == null){
+            nextLevelBTN = findViewById(R.id.nextLevelBTN);
+            levelCompleteTV = findViewById(R.id.levelCompleteTV);
+        }
+        nextLevelBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     //Screen that will take player to the next level

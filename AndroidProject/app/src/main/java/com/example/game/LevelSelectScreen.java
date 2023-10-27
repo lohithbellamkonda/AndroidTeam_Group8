@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class LevelSelectScreen extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class LevelSelectScreen extends AppCompatActivity {
     Button levelSevenBTN;
     Button levelEightBTN;
     Button levelNineBTN;
+    TextView levelSelectTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class LevelSelectScreen extends AppCompatActivity {
             levelSevenBTN = findViewById(R.id.levelSevenBTN);
             levelEightBTN = findViewById(R.id.levelEightBTN);
             levelNineBTN = findViewById(R.id.levelNineBTN);
+            levelSelectTV = findViewById(R.id.levelSelectTV);
         }
         levelOneBTN.setOnClickListener(new View.OnClickListener() {
             @Override
