@@ -28,5 +28,18 @@ public class PlayerDataHandler {
         SharedPreferences sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         return sharedPreferences.getInt(KEY_PLAYER_SCORE, 0);
     }
+    editor.putInt(KEY_HIGH_SCORE, highScore);
+    editor.putInt(KEY_PLAYER_LEVEL, playerLevel);
+ 
+ 
+    public static int getHighScore(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(KEY_HIGH_SCORE, 0);
+    }
+ 
+    public static int getPlayerLevel(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(KEY_PLAYER_LEVEL, 1); // Default level is 1
+    }
 }
 
