@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,7 +14,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="20dp"
-        android:text="Level 1"
+        android:text="@string/level_1"
         app:layout_constraintEnd_toStartOf="@+id/levelTwoBTN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +26,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="15dp"
-        android:text="Level 2"
+        android:text="@string/level_2"
         app:layout_constraintEnd_toStartOf="@+id/levelThreeBTN"
         app:layout_constraintStart_toEndOf="@+id/levelOneBTN"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +38,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="40dp"
-        android:text="Level 3"
+        android:text="@string/level_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelTwoBTN"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +50,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:text="Level 4"
+        android:text="@string/level_4"
         app:layout_constraintEnd_toStartOf="@+id/levelFiveBTN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/levelOneBTN" />
@@ -61,7 +62,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
-        android:text="Level 5"
+        android:text="@string/level_5"
         app:layout_constraintEnd_toStartOf="@+id/levelSixBTN"
         app:layout_constraintStart_toEndOf="@+id/levelFourBTN"
         app:layout_constraintTop_toBottomOf="@+id/levelTwoBTN" />
@@ -73,7 +74,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:text="Level 6"
+        android:text="@string/level_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelFiveBTN"
         app:layout_constraintTop_toBottomOf="@+id/levelThreeBTN" />
@@ -85,7 +86,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:text="Level 7"
+        android:text="@string/level_7"
         app:layout_constraintEnd_toStartOf="@+id/levelEightBTN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/levelFourBTN" />
@@ -97,7 +98,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
-        android:text="Level 8"
+        android:text="@string/level_8"
         app:layout_constraintEnd_toStartOf="@+id/levelNineBTN"
         app:layout_constraintStart_toEndOf="@+id/levelSevenBTN"
         app:layout_constraintTop_toBottomOf="@+id/levelFiveBTN" />
@@ -109,7 +110,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:text="Level 9"
+        android:text="@string/level_9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelEightBTN"
         app:layout_constraintTop_toBottomOf="@+id/levelSixBTN" />
@@ -121,8 +122,8 @@
         android:layout_marginStart="170dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="170dp"
-        android:text="Level Select"
-        android:textSize="30dp"
+        android:text="@string/level_select"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
