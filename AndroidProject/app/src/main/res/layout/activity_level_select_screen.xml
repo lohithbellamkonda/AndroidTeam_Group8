@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,36 +11,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
         android:text="@string/level_1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelTwoBTN"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelTwoBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="15dp"
         android:text="@string/level_2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelThreeBTN"
         app:layout_constraintStart_toEndOf="@+id/levelOneBTN"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelThreeBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="40dp"
         android:text="@string/level_3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelTwoBTN"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelFourBTN"
@@ -51,9 +56,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:text="@string/level_4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelFiveBTN"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelOneBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelOneBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelFiveBTN"
@@ -63,9 +70,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:text="@string/level_5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelSixBTN"
         app:layout_constraintStart_toEndOf="@+id/levelFourBTN"
-        app:layout_constraintTop_toBottomOf="@+id/levelTwoBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelTwoBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelSixBTN"
@@ -75,9 +84,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:text="@string/level_6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelFiveBTN"
-        app:layout_constraintTop_toBottomOf="@+id/levelThreeBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelThreeBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelSevenBTN"
@@ -87,9 +98,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:text="@string/level_7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelEightBTN"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelFourBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelFourBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelEightBTN"
@@ -99,9 +112,11 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:text="@string/level_8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/levelNineBTN"
         app:layout_constraintStart_toEndOf="@+id/levelSevenBTN"
-        app:layout_constraintTop_toBottomOf="@+id/levelFiveBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelFiveBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/levelNineBTN"
@@ -111,21 +126,25 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:text="@string/level_9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/levelEightBTN"
-        app:layout_constraintTop_toBottomOf="@+id/levelSixBTN" />
+        app:layout_constraintTop_toBottomOf="@+id/levelSixBTN"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/levelSelectTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="170dp"
         android:text="@string/level_select"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 </androidx.constraintlayout.widget.ConstraintLayout>
