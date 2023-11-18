@@ -12,7 +12,8 @@
         android:layout_gravity="start|center_vertical"
         android:layout_margin="30dp"
         android:text="@string/_3"
-        android:textSize="60sp" />
+        android:textSize="60sp"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/three_twoTV"
@@ -21,7 +22,8 @@
         android:layout_gravity="start|center_vertical"
         android:layout_margin="135dp"
         android:text="@string/_3"
-        android:textSize="60sp" />
+        android:textSize="60sp"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/three_threeTV"
@@ -49,4 +51,150 @@
         android:layout_margin="30dp"
         android:text="@string/_6"
         android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/plus_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/plus_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/minus_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/minus_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/mult_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/mult_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/div_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/div_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/plus_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/plus_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/minus_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/minus_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/mult_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/mult_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/div_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/div_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sqrt_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/sqrt_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/factorial_oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="510dp"
+        android:text="@string/factorial_sign"
+        android:textSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/sqrt_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/sqrt_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/factorial_twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="510dp"
+        android:text="@string/factorial_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sqrt_threeBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/sqrt_sign"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/factorial_threeBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="510dp"
+        android:text="@string/factorial_sign"
+        android:textSize="30sp" />
 </FrameLayout>

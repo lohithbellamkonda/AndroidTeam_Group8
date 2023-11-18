@@ -37,4 +37,10 @@
     <string name="_7">7</string>
     <string name="_8">8</string>
     <string name="_9">9</string>
+    <string name="plus_sign">+</string>
+    <string name="minus_sign">-</string>
+    <string name="mult_sign">x</string>
+    <string name="div_sign">÷</string>
+    <string name="factorial_sign">!</string>
+    <string name="sqrt_sign">√</string>
 </resources>
