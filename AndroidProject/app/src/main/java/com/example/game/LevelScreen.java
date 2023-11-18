@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class LevelScreen extends AppCompatActivity implements CommunicationInterface{
+public class LevelScreen extends AppCompatActivity{
 
     Button pauseBTN;
     LevelOneFragment fragOne;

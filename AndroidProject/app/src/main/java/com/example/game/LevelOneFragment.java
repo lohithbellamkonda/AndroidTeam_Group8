@@ -14,8 +14,6 @@ import java.util.Objects;
 
 public class LevelOneFragment extends Fragment {
 
-    CommunicationInterface callback;
-
     public LevelOneFragment() {
         // Required empty public constructor
     }
