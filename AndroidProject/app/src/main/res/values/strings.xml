@@ -43,4 +43,9 @@
     <string name="div_sign">÷</string>
     <string name="factorial_sign">!</string>
     <string name="sqrt_sign">√</string>
+    <string name="space_one">Space One</string>
+    <string name="space_two">Space Two</string>
+    <string name="digit_1">Digit 1</string>
+    <string name="digit_2">Digit 2</string>
+    <string name="digit_3">Digit 3</string>
 </resources>

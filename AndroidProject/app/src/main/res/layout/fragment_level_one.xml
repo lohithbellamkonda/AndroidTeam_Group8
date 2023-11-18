@@ -198,4 +198,54 @@
         android:text="@string/factorial_sign"
         android:textSize="30sp" />
 
+    <TextView
+        android:id="@+id/space_oneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/space_one"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/space_twoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/space_two"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/digit_oneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="570dp"
+        android:text="@string/digit_1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/digit_twoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="570dp"
+        android:text="@string/digit_2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/digit_threeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="570dp"
+        android:text="@string/digit_3"
+        android:textSize="30sp" />
+
 </FrameLayout>
