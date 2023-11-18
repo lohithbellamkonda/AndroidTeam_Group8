@@ -29,5 +29,7 @@
    * Users can exit the app or pause the game as needed.
 
 5. **App Logo:**
-   ![Math Puzzle Game App Logo](app_icon.png)
 
+
+
+   ![Math Puzzle Game App Logo](app_icon.png)
