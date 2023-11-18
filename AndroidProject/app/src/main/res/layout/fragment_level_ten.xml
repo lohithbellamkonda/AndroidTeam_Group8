@@ -247,5 +247,5 @@
         android:layout_marginTop="570dp"
         android:text="@string/digit_3"
         android:textSize="30sp" />
-    
+
 </FrameLayout>
