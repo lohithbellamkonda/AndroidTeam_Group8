@@ -248,4 +248,13 @@
         android:text="@string/digit_3"
         android:textSize="30sp" />
 
+    <Button
+        android:id="@+id/submitBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="@string/submit"
+        android:textSize="30sp" />
+
 </FrameLayout>

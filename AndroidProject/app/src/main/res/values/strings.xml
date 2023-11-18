@@ -48,4 +48,5 @@
     <string name="digit_1">Digit 1</string>
     <string name="digit_2">Digit 2</string>
     <string name="digit_3">Digit 3</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -20,6 +20,16 @@ public class LevelSelectScreen extends AppCompatActivity {
     Button levelNineBTN;
     Button levelTenBTN;
     TextView levelSelectTV;
+    LevelOneFragment fragOne;
+    LevelTwoFragment fragTwo;
+    LevelThreeFragment fragThree;
+    LevelFourFragment fragFour;
+    LevelFiveFragment fragFive;
+    LevelSixFragment fragSix;
+    LevelSevenFragment fragSeven;
+    LevelEightFragment fragEight;
+    LevelNineFragment fragNine;
+    LevelTenFragment fragTen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,17 +47,17 @@ public class LevelSelectScreen extends AppCompatActivity {
             levelNineBTN = findViewById(R.id.levelNineBTN);
             levelTenBTN = findViewById(R.id.levelTenBTN);
             levelSelectTV = findViewById(R.id.levelSelectTV);
+            fragOne = new LevelOneFragment();
+            fragTwo = new LevelTwoFragment();
+            fragThree = new LevelThreeFragment();
+            fragFour = new LevelFourFragment();
+            fragFive = new LevelFiveFragment();
+            fragSix = new LevelSixFragment();
+            fragSeven = new LevelSevenFragment();
+            fragEight = new LevelEightFragment();
+            fragNine = new LevelNineFragment();
+            fragTen = new LevelTenFragment();
         }
-        LevelOneFragment fragOne = new LevelOneFragment();
-        LevelTwoFragment fragTwo = new LevelTwoFragment();
-        LevelThreeFragment fragThree = new LevelThreeFragment();
-        LevelFourFragment fragFour = new LevelFourFragment();
-        LevelFiveFragment fragFive = new LevelFiveFragment();
-        LevelSixFragment fragSix = new LevelSixFragment();
-        LevelSevenFragment fragSeven = new LevelSevenFragment();
-        LevelEightFragment fragEight = new LevelEightFragment();
-        LevelNineFragment fragNine = new LevelNineFragment();
-        LevelTenFragment fragTen = new LevelTenFragment();
         levelOneBTN.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), LevelScreen.class);
             v.getContext().startActivity(intent);

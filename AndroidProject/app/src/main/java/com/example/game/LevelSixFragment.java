@@ -1,5 +1,6 @@
 package com.example.game;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -36,6 +37,7 @@ public class LevelSixFragment extends Fragment {
         Button factorial_twoBTN = requireView().findViewById(R.id.factorial_twoBTN);
         Button sqrt_threeBTN = requireView().findViewById(R.id.sqrt_threeBTN);
         Button factorial_threeBTN = requireView().findViewById(R.id.factorial_threeBTN);
+        Button submitBTN = requireView().findViewById(R.id.submitBTN);
         plus_oneBTN.setOnClickListener(v -> plus_oneBTN.setEnabled(false));
         minus_oneBTN.setOnClickListener(v -> minus_oneBTN.setEnabled(false));
         mult_oneBTN.setOnClickListener(v -> mult_oneBTN.setEnabled(false));
@@ -50,6 +52,53 @@ public class LevelSixFragment extends Fragment {
         factorial_twoBTN.setOnClickListener(v -> factorial_twoBTN.setEnabled(false));
         sqrt_threeBTN.setOnClickListener(v -> sqrt_threeBTN.setEnabled(false));
         factorial_threeBTN.setOnClickListener(v -> factorial_threeBTN.setEnabled(false));
+        submitBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), LevelScreen.class);
+            if(!plus_oneBTN.isEnabled()){
+                intent.putExtra("plusOne", true);
+            }
+            if(!minus_oneBTN.isEnabled()){
+                intent.putExtra("minusOne", true);
+            }
+            if(!mult_oneBTN.isEnabled()){
+                intent.putExtra("multOne", true);
+            }
+            if(!div_oneBTN.isEnabled()){
+                intent.putExtra("divOne", true);
+            }
+            if(!plus_twoBTN.isEnabled()){
+                intent.putExtra("plusTwo", true);
+            }
+            if(!minus_twoBTN.isEnabled()){
+                intent.putExtra("minusTwo", true);
+            }
+            if(!mult_twoBTN.isEnabled()){
+                intent.putExtra("multTwo", true);
+            }
+            if(!div_twoBTN.isEnabled()){
+                intent.putExtra("divTwo", true);
+            }
+            if(!sqrt_oneBTN.isEnabled()){
+                intent.putExtra("sqrtOne", true);
+            }
+            if(!factorial_oneBTN.isEnabled()){
+                intent.putExtra("factorialOne", true);
+            }
+            if(!sqrt_twoBTN.isEnabled()){
+                intent.putExtra("sqrtTwo", true);
+            }
+            if(!factorial_twoBTN.isEnabled()){
+                intent.putExtra("factorialTwo", true);
+            }
+            if(!sqrt_threeBTN.isEnabled()){
+                intent.putExtra("sqrtThree", true);
+            }
+            if(!factorial_threeBTN.isEnabled()){
+                intent.putExtra("factorialThree", true);
+            }
+            intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            startActivity(intent);
+        });
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_level_six, container, false);
     }
