@@ -1,15 +1,14 @@
 package com.example.game;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class LevelSelectScreen extends AppCompatActivity {
-
     Button levelOneBTN;
     Button levelTwoBTN;
     Button levelThreeBTN;
@@ -19,6 +18,7 @@ public class LevelSelectScreen extends AppCompatActivity {
     Button levelSevenBTN;
     Button levelEightBTN;
     Button levelNineBTN;
+    Button levelTenBTN;
     TextView levelSelectTV;
 
     @Override
@@ -35,72 +35,98 @@ public class LevelSelectScreen extends AppCompatActivity {
             levelSevenBTN = findViewById(R.id.levelSevenBTN);
             levelEightBTN = findViewById(R.id.levelEightBTN);
             levelNineBTN = findViewById(R.id.levelNineBTN);
+            levelTenBTN = findViewById(R.id.levelTenBTN);
             levelSelectTV = findViewById(R.id.levelSelectTV);
         }
-        levelOneBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        LevelOneFragment fragOne = new LevelOneFragment();
+        LevelTwoFragment fragTwo = new LevelTwoFragment();
+        LevelThreeFragment fragThree = new LevelThreeFragment();
+        LevelFourFragment fragFour = new LevelFourFragment();
+        LevelFiveFragment fragFive = new LevelFiveFragment();
+        LevelSixFragment fragSix = new LevelSixFragment();
+        LevelSevenFragment fragSeven = new LevelSevenFragment();
+        LevelEightFragment fragEight = new LevelEightFragment();
+        LevelNineFragment fragNine = new LevelNineFragment();
+        LevelTenFragment fragTen = new LevelTenFragment();
+        levelOneBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragOne);
+            trans.commit();
         });
-        levelTwoBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelTwoBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragTwo);
+            trans.commit();
         });
-        levelThreeBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelThreeBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragThree);
+            trans.commit();
         });
-        levelFourBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelFourBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragFour);
+            trans.commit();
         });
-        levelFiveBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelFiveBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragFive);
+            trans.commit();
         });
-        levelSixBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelSixBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragSix);
+            trans.commit();
         });
-        levelSevenBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelSevenBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragSeven);
+            trans.commit();
         });
-        levelEightBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelEightBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragEight);
+            trans.commit();
         });
-        levelNineBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                v.getContext().startActivity(intent);
-            }
+        levelNineBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragNine);
+            trans.commit();
+        });
+        levelTenBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            v.getContext().startActivity(intent);
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragTen);
+            trans.commit();
         });
     }
-
-    //Will add a number of buttons to the layout, in which number will be determined later
 }

@@ -25,4 +25,5 @@
     <string name="time">Time:</string>
     <string name="level">Level:</string>
     <string name="pause">Pause</string>
+    <string name="level_10">Level 10</string>
 </resources>
