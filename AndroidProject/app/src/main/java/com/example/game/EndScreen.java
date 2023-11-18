@@ -1,10 +1,8 @@
 package com.example.game;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -12,7 +10,6 @@ public class EndScreen extends AppCompatActivity {
 
     Button mainMenuEndBTN;
     TextView endGameTV;
-    TextView timeTakenTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +18,11 @@ public class EndScreen extends AppCompatActivity {
         if(savedInstanceState == null){
             mainMenuEndBTN = findViewById(R.id.mainMenuEndBTN);
             endGameTV = findViewById(R.id.endGameTV);
-            timeTakenTV = findViewById(R.id.timeTakenTV);
         }
-        mainMenuEndBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainScreen.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                v.getContext().startActivity(intent);
-            }
+        mainMenuEndBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), MainScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            v.getContext().startActivity(intent);
         });
     }
-
-    //End Game Screen when player beats the game will be here
-    //Will show how long user took to beat the game(will only run when the user is playing a level)
 }

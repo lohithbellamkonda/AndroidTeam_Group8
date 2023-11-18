@@ -1,10 +1,8 @@
 package com.example.game;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class MainScreen extends AppCompatActivity {
@@ -24,31 +22,25 @@ public class MainScreen extends AppCompatActivity {
             newGameBTN = findViewById(R.id.newGameBTN);
             levelSelectBTN = findViewById(R.id.levelSelectBTN);
         }
-        newGameBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(count1 == 0){
-                    intent = new Intent(v.getContext(), LevelScreen.class);
-                    count1++;
-                }
-                else{
-                    intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-                }
-                v.getContext().startActivity(intent);
+        newGameBTN.setOnClickListener(v -> {
+            if(count1 == 0){
+                intent = new Intent(v.getContext(), LevelScreen.class);
+                count1++;
             }
+            else{
+                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            }
+            v.getContext().startActivity(intent);
         });
-        levelSelectBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(count2 == 0){
-                    intent = new Intent(v.getContext(), LevelSelectScreen.class);
-                    count2++;
-                }
-                else{
-                    intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-                }
-                v.getContext().startActivity(intent);
+        levelSelectBTN.setOnClickListener(v -> {
+            if(count2 == 0){
+                intent = new Intent(v.getContext(), LevelSelectScreen.class);
+                count2++;
             }
+            else{
+                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            }
+            v.getContext().startActivity(intent);
         });
     }
 

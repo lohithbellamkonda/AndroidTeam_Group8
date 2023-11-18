@@ -1,10 +1,8 @@
 package com.example.game;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,21 +23,15 @@ public class PauseScreen extends AppCompatActivity {
             pausedTV = findViewById(R.id.pausedTV);
             currentLevelTV = findViewById(R.id.currentLevelTV);
         }
-        mainMenuBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainScreen.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-                v.getContext().startActivity(intent);
-            }
+        mainMenuBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), MainScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            v.getContext().startActivity(intent);
         });
-        resumeBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), LevelScreen.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-                v.getContext().startActivity(intent);
-            }
+        resumeBTN.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), LevelScreen.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            v.getContext().startActivity(intent);
         });
     }
 
