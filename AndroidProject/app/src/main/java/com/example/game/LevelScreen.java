@@ -22,6 +22,7 @@ public class LevelScreen extends AppCompatActivity implements CommunicationInter
     LevelEightFragment fragEight;
     LevelNineFragment fragNine;
     LevelTenFragment fragTen;
+    int level;
 
 
     @Override
@@ -51,176 +52,202 @@ public class LevelScreen extends AppCompatActivity implements CommunicationInter
         if(bundle != null){
             if(bundle.containsKey("levelOne")) {
                 Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
                 Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
                 Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
                 Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
                 Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getPlusOne && getPlusTwo && getFactorialOne && getFactorialTwo && getFactorialThree){
+                    level = 2;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelTwo")) {
                 Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
                 Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
                 Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
                 Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
                 Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getPlusOne && getPlusTwo && getFactorialOne && getFactorialTwo && getFactorialThree){
+                    level = 3;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelThree")) {
-                Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
                 Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
-                Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
                 Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getMultOne && getDivTwo){
+                    level = 4;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelFour")) {
                 Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
-                Boolean getPlusTwo = bundle.getBoolean("plusTwo");
                 Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getPlusOne && getMinusTwo){
+                    level = 5;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelFive")) {
                 Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
                 Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
                 Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
                 Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
                 Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getPlusOne && getPlusTwo && getSqrtOne && getSqrtTwo && getSqrtThree){
+                    level = 6;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelSix")) {
-                Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
                 Boolean getDivOne = bundle.getBoolean("divOne");
                 Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getDivOne && getPlusTwo){
+                    level = 7;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelSeven")) {
                 Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
-                Boolean getPlusTwo = bundle.getBoolean("plusTwo");
                 Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getPlusOne && getMinusTwo){
+                    level = 8;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelEight")) {
-                Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
                 Boolean getDivOne = bundle.getBoolean("divOne");
-                Boolean getPlusTwo = bundle.getBoolean("plusTwo");
                 Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
-                Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getDivOne && getMinusTwo){
+                    level = 9;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelNine")) {
-                Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
-                Boolean getMultOne = bundle.getBoolean("multOne");
                 Boolean getDivOne = bundle.getBoolean("divOne");
                 Boolean getPlusTwo = bundle.getBoolean("plusTwo");
-                Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
                 Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
-                Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
-                Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
                 Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getDivOne && getPlusTwo && getSqrtOne && getFactorialThree){
+                    level = 10;
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
             if(bundle.containsKey("levelTen")) {
-                Boolean getPlusOne = bundle.getBoolean("plusOne");
-                Boolean getMinusOne = bundle.getBoolean("minusOne");
                 Boolean getMultOne = bundle.getBoolean("multOne");
-                Boolean getDivOne = bundle.getBoolean("divOne");
-                Boolean getPlusTwo = bundle.getBoolean("plusTwo");
                 Boolean getMinusTwo = bundle.getBoolean("minusTwo");
-                Boolean getMultTwo = bundle.getBoolean("multTwo");
-                Boolean getDivTwo = bundle.getBoolean("divTwo");
                 Boolean getSqrtOne = bundle.getBoolean("sqrtOne");
-                Boolean getFactorialOne = bundle.getBoolean("factorialOne");
                 Boolean getSqrtTwo = bundle.getBoolean("sqrtTwo");
-                Boolean getFactorialTwo = bundle.getBoolean("factorialTwo");
                 Boolean getSqrtThree = bundle.getBoolean("sqrtThree");
-                Boolean getFactorialThree = bundle.getBoolean("factorialThree");
+
+                if(getMultOne && getMinusTwo && getSqrtOne && getSqrtTwo && getSqrtThree){
+                    onSuccess();
+                }
+                else{
+                    onFailure();
+                }
             }
         }
     }
 
     public void onSuccess(){
         Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_LONG).show();
-        FragmentManager mgr = getSupportFragmentManager();
-        FragmentTransaction trans = mgr.beginTransaction();
-        trans.replace(R.id.fragmentContainerView, fragTwo);
-        trans.commit();
+        if(level == 2){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragTwo);
+            trans.commit();
+        }
+        if(level == 3){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragThree);
+            trans.commit();
+        }
+        if(level == 4){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragFour);
+            trans.commit();
+        }
+        if(level == 5){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragFive);
+            trans.commit();
+        }
+        if(level == 6){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragSix);
+            trans.commit();
+        }
+        if(level == 7){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragSeven);
+            trans.commit();
+        }
+        if(level == 8){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragEight);
+            trans.commit();
+        }
+        if(level == 9){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragNine);
+            trans.commit();
+        }
+        if(level == 10){
+            FragmentManager mgr = getSupportFragmentManager();
+            FragmentTransaction trans = mgr.beginTransaction();
+            trans.replace(R.id.fragmentContainerView, fragTen);
+            trans.commit();
+        }
     }
 
     public void onFailure(){
         Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_LONG).show();
+        Bundle bundle = new Bundle();
+        bundle.putString("result", "Incorrect");
+        fragOne.setArguments(bundle);
     }
 }

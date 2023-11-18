@@ -6,7 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+
+import java.util.Objects;
 
 public class LevelOneFragment extends Fragment {
 
@@ -22,7 +26,7 @@ public class LevelOneFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Button plus_oneBTN = requireView().findViewById(R.id.plus_oneBTN);
         Button minus_oneBTN = requireView().findViewById(R.id.minus_oneBTN);
         Button mult_oneBTN = requireView().findViewById(R.id.mult_oneBTN);
@@ -100,6 +104,25 @@ public class LevelOneFragment extends Fragment {
             intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
             startActivity(intent);
         });
+        if(getArguments() != null) {
+            String result = getArguments().getString("result");
+            if(Objects.equals(result, "Incorrect")){
+                plus_oneBTN.setEnabled(true);
+                minus_oneBTN.setEnabled(true);
+                mult_oneBTN.setEnabled(true);
+                div_oneBTN.setEnabled(true);
+                plus_twoBTN.setEnabled(true);
+                minus_twoBTN.setEnabled(true);
+                mult_twoBTN.setEnabled(true);
+                div_twoBTN.setEnabled(true);
+                sqrt_oneBTN.setEnabled(true);
+                factorial_oneBTN.setEnabled(true);
+                sqrt_twoBTN.setEnabled(true);
+                factorial_twoBTN.setEnabled(true);
+                sqrt_threeBTN.setEnabled(true);
+                factorial_threeBTN.setEnabled(true);
+            }
+        }
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_level_one, container, false);
     }
