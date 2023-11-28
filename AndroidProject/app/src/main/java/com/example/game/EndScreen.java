@@ -18,11 +18,11 @@ public class EndScreen extends AppCompatActivity {
         if(savedInstanceState == null){
             mainMenuEndBTN = findViewById(R.id.mainMenuEndBTN);
             endGameTV = findViewById(R.id.endGameTV);
+
+            mainMenuEndBTN.setOnClickListener(v -> {
+                Intent intent = new Intent(this, MainScreen.class);
+                startActivity(intent);
+            });
         }
-        mainMenuEndBTN.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), MainScreen.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            v.getContext().startActivity(intent);
-        });
     }
 }
