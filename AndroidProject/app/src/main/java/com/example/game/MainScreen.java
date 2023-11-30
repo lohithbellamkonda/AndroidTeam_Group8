@@ -22,6 +22,7 @@ public class MainScreen extends AppCompatActivity {
             levelSelectBTN.setOnClickListener(v -> {
                 Intent intent = new Intent(this, LevelSelectScreen.class);
                 startActivity(intent);
+                finish();
             });
         }
     }

@@ -17,6 +17,7 @@ public class StartScreen extends AppCompatActivity {
             startBTN.setOnClickListener(v -> {
                 Intent intent = new Intent(this, MainScreen.class);
                 startActivity(intent);
+                finish();
             });
         }
     }

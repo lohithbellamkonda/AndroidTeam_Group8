@@ -58,6 +58,7 @@ public class LevelSixActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(this, LevelSevenActivity.class);
                 startActivity(intent);
+                finish();
             }
             else{
                 Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_LONG).show();

@@ -22,6 +22,7 @@ public class EndScreen extends AppCompatActivity {
             mainMenuEndBTN.setOnClickListener(v -> {
                 Intent intent = new Intent(this, MainScreen.class);
                 startActivity(intent);
+                finish();
             });
         }
     }
