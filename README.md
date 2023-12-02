@@ -16,17 +16,17 @@
 * Supported devices for our App : **API 34**
 ### Sequence information:
 
-1. **App Launch:**
+1. **App Launch(100%):**
    * Users launch the app on their Android devices.
 
-2. **Main Menu:**
-   * The main menu provides options for users to start a new game, access settings, view high scores, etc.
+2. **Main Menu(100%):**
+   * The main menu provides options for users to start a new game or access the various levels.
 
-3. **Gameplay:**
+3. **Gameplay(100%):**
    * Users engage in the core gameplay, enjoying the features and challenges of the game.
 
-4. **Exit or Pause:**
-   * Users can exit the app or pause the game as needed.
+4. **End or Replay(100%):**
+   * Users can exit the app whenever they wish, or they can replay the game after it is finished.
 
 5. **App Logo:**
 
